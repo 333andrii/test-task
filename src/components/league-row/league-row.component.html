@@ -1,0 +1,11 @@
+<div class="league-row-container league-grid-row" (click)="onShowBadge()">
+  <div class="league-row__name">{{ league.strLeague || '-' }}</div>
+  <div class="league-row__sport-name">{{ league.strSport || '-' }}</div>
+  <div class="league-row__alternate">
+    {{ league.strLeagueAlternate || '-' }}
+  </div>
+
+  @if (showBadge()) {
+    <app-league-badge [badgeId]="league.idLeague"></app-league-badge>
+  }
+</div>

@@ -1,0 +1,23 @@
+.league-row-container {
+  position: relative;
+  cursor: pointer;
+  padding: 10px 6px 10px 0;
+  user-select: none;
+
+  .league-row {
+    &__name,
+    &__sport-name,
+    &__alternate {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &:hover {
+    background: #e5e5e5;
+  }
+}
+
+app-league-row {
+  background: red;
+}

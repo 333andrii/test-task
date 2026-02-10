@@ -1,0 +1,39 @@
+.input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  select,
+  input {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+    min-width: 150px;
+  }
+}
+
+button {
+  background: #dbdbdb;
+  outline-width: 0;
+  border-width: 0;
+  border-radius: 5px;
+  padding: 9px 20px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,16 @@
+::ng-deep {
+  .league-grid-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding-bottom: 5px;
+  }
+
+  app-league-row {
+    display: block;
+
+    &:nth-child(even) {
+      background: #f8f8f8;
+    }
+  }
+}

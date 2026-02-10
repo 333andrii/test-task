@@ -1,0 +1,8 @@
+<div class="input-group">
+  <label [for]="id">Sport</label>
+  <select [disabled]="true" [id]="id" [formControl]="control">
+    @for (sport of sports; track sport) {
+      <option [value]="sport.strSport">{{ sport.strSport }}</option>
+    }
+  </select>
+</div>

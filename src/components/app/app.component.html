@@ -1,0 +1,24 @@
+<div class="leagues-list-container">
+  <loader [show]="isLoading()"></loader>
+
+  <h1>Leagues</h1>
+
+  <h4>Search Filters</h4>
+  <div class="search-params-container">
+    <form class="search-params-container-form" [formGroup]="searchForm">
+      <form-sport-select
+        [control]="searchForm.controls.sportType"
+      ></form-sport-select>
+
+      <form-input-text
+        [control]="searchForm.controls.leagueName"
+      ></form-input-text>
+
+      <button type="button" (click)="resetFilters()">Clear all filters</button>
+      <button type="button" (click)="refreshData()">Refresh Data</button>
+    </form>
+  </div>
+
+  <h4>Leagues list</h4>
+  <app-leagues-table [leagues]="leagues()"></app-leagues-table>
+</div>

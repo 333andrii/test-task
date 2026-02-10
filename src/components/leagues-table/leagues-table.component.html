@@ -1,0 +1,12 @@
+<div class="leagues-table-container">
+
+  <div class="league-grid-row">
+    <div><b>Leagues Name</b></div>
+    <div><b>Sport</b></div>
+    <div><b>Leagues Alternate</b></div>
+  </div>
+
+  @for (league of leagues; track league.idLeague) {
+    <app-league-row [league]="league"></app-league-row>
+  }
+</div>
